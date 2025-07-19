@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio M. Maduzan</title>
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" href="./src/assets/images/favicon-16x16.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="mobile" onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <ul class="nav-mobile-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Mes projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apropos">À propos</a></li>
+            </ul>
+
+        </div>
+
+
+
+        <div class="mobile-overlay" onclick="toggleMenu()"></div>
+
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Mes projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#apropos">À propos</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <!-- ACCUEIL -->
+    <section class="accueil" id="accueil">
+        <img src="./src/assets/images/photo.JPG" alt="photoprofil" class="photo-profil">
+        <div class="texte-accueil">
+            <h1>M. Maduzan 👋</h1>
+            <p>Je suis la recherche d’une première année d’alternance en tant que développeur Front End rythme
+                d’alternance 3 semaines en entreprise / 1 semaine en formation pour une durée de 2 ans.</p>
+        </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="competences" id="competences">
+        <h2>Compétences</h2>
+        <div class="grid-competences">
+            <img src="src/assets/icons/icons8-html-5.svg" alt="HTML">
+            <img src="./src/assets/icons/icons8-css3.svg" alt="CSS">
+            <img src="./src/assets/icons/icons8-javascript.svg" alt="JavaScript">
+            <img src="./src/assets/icons/icons8-mysql.svg" alt="MySQL">
+            <img src="./src/assets/icons/icons8-nodejs.svg" alt="Node.js">
+            <img src="./src/assets/icons/icons8-réagir.svg" alt="React">
+            <img src="./src/assets/icons/icons8-vue-js.svg" alt="Vue.js">
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="projets" id="projets">
+        <h2>Mes projets</h2>
+        <div class="grid-projets">
+            <div class="projet">
+                <img src="./src/assets/images/projet-1.png" alt="Projet 1">
+                <a href="https://github.com/MMaduzan/INSTAGRAM-LIKE_JS" class="github-link" target="_blank">Voir sur
+                    GitHub</a>
+            </div>
+            <div class="projet">
+                <img src="./src/assets/images/projet-2.png" alt="Projet 2">
+                <a href="https://github.com/MMaduzan/BLOG_HENNE" class="github-link" target="_blank">Voir sur GitHub</a>
+            </div>
+            <div class="projet">
+                <img src="./src/assets/images/projet-3.png" alt="Projet 3">
+                <a href="https://github.com/MMaduzan/SPOTIFY-LIKE" class="github-link" target="_blank">Voir
+                    sur GitHub</a>
+            </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+            <a href="mailto:m.maduzan@gmail.com?subject=Portfolio" class="mail">📧</a>
+            <a href="https://www.linkedin.com/in/maduzan-manmatharajah-b439b02b1/" target="_blank">
+                <img src="./src/assets/icons/linkedin-logo-cv.webp" alt="LinkedIn">
+            </a>
+        </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="a-propos" id="apropos">
+        <h2>À propos</h2>
+        <div class="contenu-apropos">
+            <img src="./src/assets/images/image-about.jpeg" alt="image à propos" class="image-about">
+            <p>
+                Je suis passionné par le développement. J'ai fait une première année à HETIC. J'étais à la recherche
+                d'une alternance l'année passée sans succès.
+                J'ai donc enchaîné des petits boulots par-ci par-là. Aujourd'hui, je suis de retour, plus motivé que
+                jamais.
+                Même si je me suis découragé, la force viendra car la passion est bien présente.
+                Ne ratez pas votre chance de former votre futur développeur !
+                Je n'ai pas baissé les bras. Cette fois, ce sera la bonne.
+            </p>
+        </div>
+        <a href="CV_Maduzan.M.pdf" class="cv-button" target="_blank">Télécharger mon CV</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2025 M. Maduzan - Tous droits réservés
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
